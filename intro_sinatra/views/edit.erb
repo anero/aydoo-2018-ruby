@@ -1,0 +1,7 @@
+<h1>Editar Alumno</h1>
+
+<form action="/alumno/update/<%= params[:id] %>" method='post'>
+  <input type="hidden" name="_method" value="put" />
+  <input name='nombre' type='text' value='<%= @alumno %>' />
+  <input type='submit' />
+</form>

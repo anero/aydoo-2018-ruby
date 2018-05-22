@@ -1,0 +1,12 @@
+<h1>Alumnos:</h1>
+
+<table>
+  <% @alumnos.each do |alumno| %>
+    <tr>
+      <td><%= alumno[:nombre] %></td>
+      <td><a href='<%= url("/alumno/show/#{alumno[:id]}") %>'>Ver</a>
+    </tr>
+  <% end %>
+</table>
+
+<a href='<%= url("/alumno/new") %>'>Crear nuevo</a>

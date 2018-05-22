@@ -1,0 +1,9 @@
+<h1>Alumno:</h1>
+
+<p><%= @alumno %></p>
+
+<a href='<%= url("/alumno/edit/#{params[:id]}") %>'>Editar</a>
+<form action='<%= url("/alumno/destroy/#{params[:id]}") %>' method='post'>
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="Borrar" />
+</form>
