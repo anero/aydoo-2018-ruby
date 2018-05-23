@@ -9,5 +9,10 @@ gem 'guard-rspec'
 gem 'rb-readline'
 
 gem 'sinatra'
+gem 'sinatra-contrib'
 
 gem 'byebug'
+
+group :test do
+  gem 'rack-test'
+end
